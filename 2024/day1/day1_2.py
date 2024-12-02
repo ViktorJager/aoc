@@ -1,3 +1,5 @@
+### AOC Day 1-2 ###
+
 INPUT = "aoc/2024/day1/input.txt"
 
 
@@ -20,7 +22,7 @@ left_list = []
 right_list = []
 
 for line in lines:
-    entries = line.split("   ")
+    entries = line.split()
     left_list.append(int(entries[0]))
     right_list.append(int(entries[1]))
 
@@ -29,7 +31,3 @@ for num in left_list:
     similarity += num * number_occurance(num, right_list)
 
 print(similarity)
-
-
-
-
