@@ -1,6 +1,5 @@
-### AOC Day 2-1 ###
+### AOC Day 2-2 ###
 
-# INPUT = "aoc/2024/day2/input.txt"
 INPUT = "aoc/2024/day2/input.txt"
 
 
@@ -47,11 +46,11 @@ def problem_dampener(report):
             return True
     return False
     
+    
 reports = parse_reports(read_lines(INPUT))
 
 results = []
 for report in reports:
     results.append(problem_dampener(report))
-
 
 print(sum(results))
