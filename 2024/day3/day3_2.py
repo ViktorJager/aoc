@@ -13,7 +13,7 @@ def read_file(path):
 
 memory = read_file(INPUT)
 
-pattern = "mul\([0-9]+,[0-9]+\)"
+pattern = "mul\([0-9]+,[0-9]+\)|do\(\)|don\'t\(\)"
 instructions = re.findall(pattern, memory)
 
 valid_instructions = []
