@@ -1,4 +1,4 @@
-### AOC Day 4-1 ###
+### AOC Day 4-2 ###
 
 from collections import Counter
 
